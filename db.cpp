@@ -13,6 +13,12 @@ db::~db()
 {
 }
 
+template <typename T>
+void db::display(T table)
+{
+	table::displayAll();
+}
+
 Customer2 db::add_customer(Customer2 & customer)
 {
 	customer.set_index(customer.get_count());

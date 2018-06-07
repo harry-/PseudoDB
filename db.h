@@ -13,6 +13,9 @@ private:
 	std::list<Vendor> vendors_;
 	std::list<Order> orders_;
 
+	template<typename T>
+	void display(T listtype);
+
 
 
 
